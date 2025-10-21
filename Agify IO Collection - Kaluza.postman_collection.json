@@ -1,0 +1,340 @@
+{
+	"info": {
+		"_postman_id": "fa593948-c672-43ed-a799-537b06a1eeb5",
+		"name": "Agify IO Collection - Kaluza",
+		"description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49390721",
+		"_collection_link": "https://hanothemano-6108728.postman.co/workspace/hanothemano-postman-team's-Work~f87b1dd0-3c96-4d47-83f0-f06886e1ceeb/collection/49390721-fa593948-c672-43ed-a799-537b06a1eeb5?action=share&source=collection_link&creator=49390721"
+	},
+	"item": [
+		{
+			"name": "Agify API (Guess Age)",
+			"item": [
+				{
+					"name": "TC1 - Get Age Using Name ONLY (Michael)",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.agify.io?name=michael",
+							"protocol": "https",
+							"host": [
+								"api",
+								"agify",
+								"io"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "michael"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TC2 - Get Age Using Name and Country ID",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.agify.io?name=michael&country_id=US",
+							"protocol": "https",
+							"host": [
+								"api",
+								"agify",
+								"io"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "michael"
+								},
+								{
+									"key": "country_id",
+									"value": "US"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TC3 - Get Age Using Multiple Names In Array (Michael + Matthew + Jane)",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.agify.io?name[]=michael&name[]=matthew&name[]=jane",
+							"protocol": "https",
+							"host": [
+								"api",
+								"agify",
+								"io"
+							],
+							"query": [
+								{
+									"key": "name[]",
+									"value": "michael"
+								},
+								{
+									"key": "name[]",
+									"value": "matthew"
+								},
+								{
+									"key": "name[]",
+									"value": "jane"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TC4 - Get Age Using Multiple Names + Country Array (Michael AU + Matthew AU)",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.agify.io?name[]=michael&country_id=AU&name[]=matthew&country_id=AU",
+							"protocol": "https",
+							"host": [
+								"api",
+								"agify",
+								"io"
+							],
+							"query": [
+								{
+									"key": "name[]",
+									"value": "michael"
+								},
+								{
+									"key": "country_id",
+									"value": "AU"
+								},
+								{
+									"key": "name[]",
+									"value": "matthew"
+								},
+								{
+									"key": "country_id",
+									"value": "AU"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TC5 - Get Age Using Name Not In Database",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.agify.io?name=thisnameisnotvalid",
+							"protocol": "https",
+							"host": [
+								"api",
+								"agify",
+								"io"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "thisnameisnotvalid"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TC6 - Get Age Using Name Which Contains Special Characters",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.agify.io?name=Dāwiḏ",
+							"protocol": "https",
+							"host": [
+								"api",
+								"agify",
+								"io"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Dāwiḏ"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TC7 - Get Age Using Name Which Is Very Long",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.agify.io?name=Dāwiḏ",
+							"protocol": "https",
+							"host": [
+								"api",
+								"agify",
+								"io"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Dāwiḏ"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TC8 - Get Age Using Name With Surname Included Space",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.agify.io?name=Firstname&last=Surname",
+							"protocol": "https",
+							"host": [
+								"api",
+								"agify",
+								"io"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Firstname"
+								},
+								{
+									"key": "last",
+									"value": "Surname"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TC9 - Get Name With Invalid API Key",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.genderize.io?name=peter&apikey=kl69hxnw0bjfrJ1KY5HZ3cTVtZAX3BQA",
+							"protocol": "https",
+							"host": [
+								"api",
+								"genderize",
+								"io"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "peter"
+								},
+								{
+									"key": "apikey",
+									"value": "kl69hxnw0bjfrJ1KY5HZ3cTVtZAX3BQA"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Genderize API (Guess Gender)",
+			"item": [
+				{
+					"name": "TC10 - Get Gender Name ONLY (Peter)",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.genderize.io?name=peter",
+							"protocol": "https",
+							"host": [
+								"api",
+								"genderize",
+								"io"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "peter"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TC11 - Get Gender With Long Name",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.genderize.io?name=peter",
+							"protocol": "https",
+							"host": [
+								"api",
+								"genderize",
+								"io"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "peter"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

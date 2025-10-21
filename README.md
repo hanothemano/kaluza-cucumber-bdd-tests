@@ -88,3 +88,7 @@ run the following command
 
 ##### There Are Some Additional Testing Notes In This File
 Additional-Comments.md
+
+
+##### Postman Collection
+Agify IO Collection - Kaluza.postman_collection.json
