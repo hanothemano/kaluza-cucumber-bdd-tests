@@ -1,0 +1,18 @@
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# Dependency directories
+node_modules/
+
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore temporary files and editor configurations
+*.tmp
+.vscode/
