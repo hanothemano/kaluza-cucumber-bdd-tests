@@ -1,9 +1,8 @@
-Steps To Consider Also Take Note Of
+## Additional Test Steps To Consider And Also Take Note Of
 
-1st Thing To Consider
+##### 1st Thing To Consider
 We should really should get an API key setup for this project if you want to automate the tests
 https://api.genderize.io?name=peter&apikey=YOUR_API_KEY
-
 
 I almost had to signup for an API Key if I run out of requests (used my mobile phone hotspot in the meantime)
 https://agify.io/store
@@ -27,13 +26,14 @@ The best practice is generally to use AUTH servicce instead of hardcoded API key
 
 So that way we have less security risk more details TBC on this topic
 
-YOU SHOULD NEVER store API keys in Github repos
+`YOU SHOULD NEVER`store API keys in Github repos
 
 
 
-2nd Thing To Consider
 
-Test Execution / splitting up the feature files
+##### 2nd Thing To Consider
+
+Test Execution / Splitting Up The Feature Files
 
 I would like to also have multiple feature files / failure points for the tests
 
@@ -41,27 +41,23 @@ if the suite takes too long to run then we should split up the feature for bette
 
 it all depends on how fast we could potentially spin up docker ec2 instances in kubernetes to run our tests
 
-and if it made sense to split up the tests using configs
+and if it potentially made sense to split up the tests using configs
 
 e.g. UK / US / AU Regions
 
 Since these are all GET name requests (then it makes sense to have them)
 
-However I only just realised 
+
+##### 3rd Thing To Consider
+
+I will be doing some further updates to the readme / later this evening to tidy things up a bit; so please clone the latest repo tomorrow morning if there are changes
 
 
+##### 4th Thing To Consider
 
-3rd Thing To Consider
+Ideally these tests results should be getting sent to a HTML reporter; so that they can easily be downloaded + viewed in browser etc.
 
-I will be doing some more updates to the readme / later this evening to tidy things up a bit
-
-So please clone the latest repo tomorrow morning if there are changes
-
-
-4th Thing To Consider
-
-The tests should be going to a HTML reporter so that they can easily be downloaded + viewed
-
+I would use something like
 cucumber-html-reporter
 
-I ran out of time to set this up
+But I unfortunately ran out of time to set this up correctly
