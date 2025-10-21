@@ -10,14 +10,18 @@ recording-fallback-example-test-working.mp4
 Ensure that both Node + npm is also installed
 
 You can check this by running the command in terminal shell
+
+````
 node -v
 npm -v
+````
 
-If you dont have node installed you can simply run the command
-`brew install node`
+If you dont have node correctly installed you can simply run the command
+
+`brew install node` -> provided you have brew pre-installed on your mac
 
 
-The current versions running on my local mac machine were
+The current node / npm versions running on my local mac machine were
 
 `Node
 v18.20.8`
@@ -25,7 +29,7 @@ v18.20.8`
 `NPM
 v10.8.2`
 
-So hopefully your current node / npm versions will also work on your machine too
+So hopefully your current node / npm versions will also work + the tests run fine on your machine
 
 ##### Step 2
 
@@ -42,6 +46,8 @@ cd into the project folder
 ##### 1st Command To Run After Cloning
 
 `npm init playwright@latest`
+
+You will be asked a few prompts when installing the playwright packages
 
 Q1. Do you want to use TypeScript or JavaScript?
 Select Javascript for that option
@@ -89,6 +95,9 @@ run the following command
 ##### There Are Some Additional Testing Notes In This File
 Additional-Comments.md
 
+Things which have been missed / not setup fully, some recommendations etc.
 
 ##### Postman Collection
 Agify IO Collection - Kaluza.postman_collection.json
+
+I exported my collection into the repo just in case wanted to quickly test the APIs out
