@@ -56,3 +56,12 @@ However I only just realised
 I will be doing some more updates to the readme / later this evening to tidy things up a bit
 
 So please clone the latest repo tomorrow morning if there are changes
+
+
+4th Thing To Consider
+
+The tests should be going to a HTML reporter so that they can easily be downloaded + viewed
+
+cucumber-html-reporter
+
+I ran out of time to set this up
