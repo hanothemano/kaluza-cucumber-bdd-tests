@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "@cucumber/cucumber": "^11.3.0",
+    "modules": "^0.4.0",
+    "node": "^25.0.0",
     "node-fetch": "^3.3.2"
   }
 }

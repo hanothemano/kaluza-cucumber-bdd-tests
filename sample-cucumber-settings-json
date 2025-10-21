@@ -1,0 +1,38 @@
+{
+    "cucumber.features": [
+        
+        "src/tests/**/*.feature",
+        "features/**/*.feature",
+        "tests/**/*.feature",
+        "*specs*/**/*.feature"
+    ],
+    "cucumber.glue": [
+        "tests/steps/*.js",
+    ],
+    "files.associations": {
+        ".env*": "dotenv"
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "keyword.other.dotenv",
+                "settings": {
+                    "foreground": "#FF000000"
+                }
+            }
+        ]
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "CucumberOpen.cucumber-official"
+    },
+    "cSpell.userWords": [
+        "Agify",
+        "aswell",
+        "firsname",
+        "firstname",
+        "Genderize",
+        "lastname",
+        "paramater",
+        "realised"
+    ],
+}

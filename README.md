@@ -1,36 +1,47 @@
 # kaluza-cucumber-bdd-tests
-bdd tests for kaluza interview
+These are the BDD Cucumber Tests For Kaluza Interview
+
+**NOTE:** If for whatever reason you cannot get these tests to run I have attached a quicktime video for reference of them working
+recording-fallback-example-test-working.mp4
 
 
-Ensure that node is installed
-And that NPM is also installed
+##### Step 1
 
+Ensure that both Node + npm is also installed
+
+You can check this by running the command in terminal shell
 node -v
 npm -v
 
-the current versions running on my local mac machine are 
-
-Node
-v18.20.8
-
-NPM
-v10.8.2
-
-So hopefully your current versions will also work when you download this repo!
+If you dont have node installed you can simply run the command
+`brew install node`
 
 
-clone the repo
-git@github.com:hanothemano/kaluza-cucumber-bdd-tests.git
+The current versions running on my local mac machine were
+
+`Node
+v18.20.8`
+
+`NPM
+v10.8.2`
+
+So hopefully your current node / npm versions will also work on your machine too
+
+##### Step 2
+
+ssh clone the repo (or manually download the zip)
+
+`git clone git@github.com:hanothemano/kaluza-cucumber-bdd-tests.git`
 
 
 cd into the project folder
 
-cd kaluza-cucumber-bdd-tests
+`cd ~/Downloads/kaluza-cucumber-bdd-tests`
 
 
-1st command to run
+##### 1st Command To Run After Cloning
 
-npm init playwright@latest
+`npm init playwright@latest`
 
 Q1. Do you want to use TypeScript or JavaScript?
 Select Javascript for that option
@@ -41,40 +52,39 @@ use the same existing directory folder "tests"
 Q3. Add a GitHub Actions workflow?
 true
 
-Q4. Install Playwright browsers (can be done manually via 'npx playwright install')
+Q4. Install Playwright browsers (this can be done manually via npx playwright install)
 /Users/thansen/bayshanntech-repositories/kaluza-cucumber-bdd-tests/playwright.config.js already exists. Override it? (y/N) › false
 
 
-
-2nd command to run (installing cucumber)
-npm i @cucumber/cucumber node modules
-
-
-3rd command to run (node fetch)
-npm install node-fetch
+##### 2nd Command To Run (Installing Cucumber)
+`npm i @cucumber/cucumber node modules`
 
 
-4th Tip For Cucumber
-make sure you have also configured your vscode
-Cucumber Glue -> helps with debugging + linking the given when then statement in the feature files
-
-settings.json -> add here soon
+##### 3rd Command To Run (node fetch)
+`npm install node-fetch`
 
 
+##### Additional Tip For Cucumber Configs In Vscode
+Another thing you should usually do is configure vscode or your IDE with a cucumber glue reference. As it helps with debugging the test steps and links the given when then statement for the feature files.
+
+Code -> Settings -> Settings -> Cucumber Features -> Edit Settings.JSON
+
+See Sample File: sample-cucumber-settings-json
 
 
+##### 4th Command - Executing The Cucumber Tests Locally
+In the main project root directory
 
-
-5. Executing The Cucumber Tests Locally
-
-in the main project root directory
 run the following command
-
-npx cucumber-js features
-
+`npx cucumber-js features`
 
 
 
-6. If you can't get these tests to run properly (I have done a quicktime screen recording with them working!)
 
-see <folder name>
+##### Note. If you cannot get these tests to run properly I have done a quicktime screen recording showing them working
+
+> recording-fallback-example-test-working.mp4
+
+
+##### There Are Some Additional Testing Notes In This File
+Additional-Comments.md
